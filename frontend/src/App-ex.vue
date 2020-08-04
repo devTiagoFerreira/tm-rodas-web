@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Header pag1="Home" pag2="Quem Somos" pag3="Compre Online" pag4="Contato" />
+     <HelloWorld msg="nav" />
     <div class="parallax-container">
       <div class="parallax">
         <img src="img/whells.jpg" />
@@ -11,12 +11,12 @@
 </template>
 
 <script>
-import Header from "./components/Header.vue";
+import HelloWorld from "./components/HelloWorld.vue";
 
 export default {
   name: "App",
   components: {
-    Header,
+    HelloWorld,
   },
 };
 </script>

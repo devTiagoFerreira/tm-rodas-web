@@ -1,0 +1,11 @@
+{
+  "name": "tm-rodas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "scss": "sass --watch sass:css"
+  },
+  "author": "",
+  "license": "ISC"
+}

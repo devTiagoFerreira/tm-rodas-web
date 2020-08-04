@@ -1,0 +1,18 @@
+@import 'base';
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.header .nav-extended {
+    background: $color2;
+    .nav-wrapper {
+        .brand-logo {
+            height: 100%;
+            img {
+                height: 100%;
+            }
+        }
+    }
+}
