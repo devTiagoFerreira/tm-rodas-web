@@ -1,17 +1,110 @@
+.time {
+  justify-content: center;
+  font-size: 20px;
+  width: 250px;
+  background: #000;
+}
+
+.header .social {
+  background: #000;
+  width: 100%;
+  height: 40px;
+}
+.header .social ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  max-width: 1300px;
+  margin: auto;
+}
+.header .social ul li {
+  text-align: center;
+  width: calc(170px / 3);
+}
+.header .social ul li a img {
+  margin-top: 4px;
+  width: 30px;
+  transition: 0.1s;
+}
+.header .social ul li a img:hover {
+  cursor: pointer;
+  opacity: 50%;
+}
+.header #menu .nav-extended {
+  background: #8a0e0e;
+  opacity: 100%;
+}
+.header #menu .nav-extended .nav-wrapper {
+  max-width: 1300px;
+  margin: auto;
+}
+.header #menu .nav-extended .nav-wrapper .brand-logo {
+  height: 100%;
+}
+.header #menu .nav-extended .nav-wrapper .brand-logo img {
+  height: 100%;
+}
+.header #menu .nav-extended .nav-wrapper #nav-mobile {
+  text-align: center;
+}
+.header #menu .nav-extended .nav-wrapper #nav-mobile li {
+  width: 170px;
+}
+.header #menu .nav-extended .nav-wrapper #nav-mobile li a {
+  font-size: 20px;
+}
+.header .sidenav {
+  background: #8a0e0e;
+}
+.header .sidenav .logo {
+  text-align: center;
+  height: 180px;
+  background: #fff;
+}
+.header .sidenav .logo img {
+  height: inherit;
+  background: #fff;
+}
+.header .sidenav li a {
+  font-size: 20px;
+  font-weight: 300;
+  height: 60px;
+  color: #fff;
+  line-height: 60px;
+}
+.header .sidenav li a .material-icons {
+  height: inherit;
+  line-height: inherit;
+  color: #fff;
+}
+.header #dropdown-web {
+  background: #000;
+  top: -64px;
+}
+.header #dropdown-web li a {
+  color: #fff;
+}
+.header #dropdown-web li a:hover {
+  background: #8a0e0e;
+}
+.header #dropdown-mob {
+  background: #000;
+}
+.header #dropdown-mob li:hover {
+  background: #8a0e0e;
+}
+@media only screen and (max-width: 992px) {
+  .header .social ul {
+    justify-content: center;
+  }
+}
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-}
-
-.header .nav-extended {
-  background: #000;
-}
-.header .nav-extended .nav-wrapper .brand-logo {
-  height: 100%;
-}
-.header .nav-extended .nav-wrapper .brand-logo img {
-  height: 100%;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: initial;
+  font-weight: 300;
 }
 
 /*# sourceMappingURL=main.css.map */

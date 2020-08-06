@@ -1,18 +1,8 @@
-@import 'base';
-*{
+@import "base";
+@import "header";
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-}
-
-.header .nav-extended {
-    background: $color2;
-    .nav-wrapper {
-        .brand-logo {
-            height: 100%;
-            img {
-                height: 100%;
-            }
-        }
-    }
+    @include font-1(initial, 300);
 }

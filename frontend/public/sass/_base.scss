@@ -2,3 +2,15 @@ $color1: #fff;
 $color2: #000;
 $color3: #8a0e0e;
 $color4: #9a9aa2;
+$font1: 'Barlow Condensed', sans-serif; 
+//Light 300
+//Regular 400
+//Medium 500
+//Semi-bold 600
+//Bold 700
+
+@mixin font-1 ($size, $weight) {
+    font-family: $font1;
+    font-size: $size;
+    font-weight: $weight;
+}
