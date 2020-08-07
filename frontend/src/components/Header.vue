@@ -1,39 +1,8 @@
 <template>
   <header id="header" class="header">
-    <div class="social">
-      <ul>
-        <li>
-          <a
-            onclick="M.toast({html: 'Seg - Sex : 08:00 - 17:30 <br/> Sábados : 08:00 - 12:00', classes: 'time'})"
-          >
-            <img src="img/clock.png" alt="whatsaap" />
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <img src="img/local.png" alt="whatsaap" />
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <img src="img/wz.png" alt="whatsaap" />
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <img src="img/fb.png" alt="facebook" />
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <img src="img/tg.png" alt="instagram" />
-          </a>
-        </li>
-      </ul>
-    </div>
     <!--web nav-->
-    <div id="menu">
-      <nav class="nav-extended" data-target="menu">
+    <div class="navbar-fixed" id="menu">
+      <nav class="nav-extended">
         <div class="nav-wrapper">
           <a href="#" class="brand-logo">
             <img src="img/logo1.png" alt="TM RODAS" />
@@ -43,16 +12,16 @@
           </a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
             <li>
-              <a href="#">{{pag1}}</a>
+              <router-link to="/" class="a">{{pag1}}</router-link>
             </li>
             <li>
-              <a href="#">{{pag2}}</a>
+              <router-link to="/" class="a">{{pag2}}</router-link>
             </li>
             <li>
-              <a href="#">{{pag3}}</a>
+              <router-link to="/" class="a">{{pag3}}</router-link>
             </li>
             <li>
-              <a class="dropdown-trigger" href="#" data-target="dropdown-web">
+              <a class="dropdown-trigger" data-target="dropdown-web">
                 {{pag4}}
                 <i class="material-icons right">arrow_drop_down</i>
               </a>
@@ -67,25 +36,25 @@
         <img src="img/logo2.png" alt />
       </li>
       <li>
-        <a href="#">
+        <router-link to="/" class="a">
           <i class="material-icons left">home</i>
           {{pag1}}
-        </a>
+        </router-link>
       </li>
       <li>
-        <a href="#">
+        <router-link to="/" class="a">
           <i class="material-icons left">group</i>
           {{pag2}}
-        </a>
+        </router-link>
       </li>
       <li>
-        <a href="#">
+        <router-link to="/" class="a">
           <i class="material-icons left">shopping_cart</i>
           {{pag3}}
-        </a>
+        </router-link>
       </li>
       <li>
-        <a class="dropdown-trigger" href="#" data-target="dropdown-mob">
+        <a class="dropdown-trigger" data-target="dropdown-mob">
           <i class="material-icons left">email</i>
           {{pag4}}
           <i class="material-icons right">arrow_drop_down</i>
@@ -95,25 +64,25 @@
     <!--web dropdown nav-->
     <ul id="dropdown-web" class="dropdown-content">
       <li>
-        <a href="#!">{{drop1}}</a>
+        <router-link to="/" class="a">{{drop1}}</router-link>
       </li>
       <li>
-        <a href="#!">{{drop2}}</a>
+        <router-link to="/" class="a">{{drop2}}</router-link>
       </li>
       <li>
-        <a href="#!">{{drop3}}</a>
+        <router-link to="/" class="a">{{drop3}}</router-link>
       </li>
     </ul>
     <!--mob dropdown nav-->
     <ul id="dropdown-mob" class="dropdown-content">
       <li>
-        <a href="#!">{{drop1}}</a>
+        <router-link to="/" class="a">{{drop1}}</router-link>
       </li>
       <li>
-        <a href="#!">{{drop2}}</a>
+        <router-link to="/" class="a">{{drop2}}</router-link>
       </li>
       <li>
-        <a href="#!">{{drop3}}</a>
+        <router-link to="/" class="a">{{drop3}}</router-link>
       </li>
     </ul>
   </header>
