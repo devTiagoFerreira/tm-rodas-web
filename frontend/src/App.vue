@@ -12,7 +12,7 @@
     />
     <div class="parallax-container">
       <div class="parallax">
-        <img src="img/whells.jpg" />
+        <img src="img/wheels.jpg" />
       </div>
     </div>
     <router-view/>
@@ -39,6 +39,5 @@ export default {
 
 <style>
 #app {
-  height: 2000px;
 }
 </style>

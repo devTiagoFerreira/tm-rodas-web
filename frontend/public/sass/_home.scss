@@ -1,0 +1,69 @@
+.home {
+    h1 {
+    }
+    .desc {
+        padding: 0 10px;
+        color: $color4;
+        font-size: 25px;
+    }
+    .row {
+        margin-top: 25px;
+        .col {
+            .card {
+                .card-image {
+                    img {
+                    }
+                    .card-title {
+                        padding: 0 25px;
+                        background-color: $color2;
+                        opacity: 60%;
+                        font-size: 30px;
+                        font-weight: 500;
+                    }
+                }
+                .card-content {
+                    p {
+                        color: $color4;
+                        font-size: 20px;
+                    }
+                }
+                .card-action {
+                    padding: 0;
+                    transition: 0.2s;
+                    &:hover {
+                        background-color: $color2;
+                    }
+                    .green-text {
+                        padding: 30px 25px;
+                        width: 100%;
+                        display: flex;
+                        font-size: 18px;
+                        align-items: center;
+                        height: 40px;
+                        line-height: 40px;
+                        img {
+                            height: 30px;
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .home {
+        .row {
+            .col {
+                .card {
+                    .card-image {
+                        .card-title {
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

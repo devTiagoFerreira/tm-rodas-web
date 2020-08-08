@@ -108,6 +108,55 @@
 .header #dropdown-mob li:hover {
   background: #8a0e0e;
 }
+.home .desc {
+  padding: 0 10px;
+  color: #9a9aa2;
+  font-size: 25px;
+}
+.home .row {
+  margin-top: 25px;
+}
+.home .row .col .card .card-image .card-title {
+  padding: 0 25px;
+  background-color: #000;
+  opacity: 60%;
+  font-size: 30px;
+  font-weight: 500;
+}
+.home .row .col .card .card-content p {
+  color: #9a9aa2;
+  font-size: 20px;
+}
+.home .row .col .card .card-action {
+  padding: 0;
+  transition: 0.2s;
+}
+.home .row .col .card .card-action:hover {
+  background-color: #000;
+}
+.home .row .col .card .card-action .green-text {
+  padding: 30px 25px;
+  width: 100%;
+  display: flex;
+  font-size: 18px;
+  align-items: center;
+  height: 40px;
+  line-height: 40px;
+}
+.home .row .col .card .card-action .green-text img {
+  height: 30px;
+  margin-right: 10px;
+}
+
+@media only screen and (max-width: 992px) {
+  .home .row .col .card .card-image .card-title {
+    font-size: 20px;
+  }
+}
+.quem {
+  background-color: #fff;
+}
+
 * {
   margin: 0px;
   padding: 0px;
