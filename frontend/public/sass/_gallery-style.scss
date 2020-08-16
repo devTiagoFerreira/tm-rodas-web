@@ -1,0 +1,97 @@
+@import "gallery-base";
+@import "grid-config";
+
+$i: 0; //control of img-height
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.quem {
+    .container-gallery {
+        width: 100%;
+        margin: auto;
+        .image-gallery {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: auto;
+            grid-template-areas: $grid-block;
+            .photo {
+                width: 100%;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: solid 1vh $color-two;
+                ion-icon {
+                    color: $color-two;
+                    position: relative;
+                    z-index: 100;
+                    border: solid 1px $color-two;
+                    border-radius: 5px;
+                    opacity: 0;
+                    transition: $timer;
+                    background-color: $color-one;
+                }
+                &:hover {
+                    cursor: pointer;
+                    ion-icon {
+                        font-size: 22px;
+                        opacity: 0.6;
+                        padding: 10px 10px;
+                    }
+                }
+            }
+            @each $height in $img-grid-height {
+                $i: $i + 1;
+                .img-#{$i} {
+                    grid-area: img-#{$i};
+                    height: ($height * 30vh);
+                }
+            }
+        }
+    }
+    #body-large-img {
+        display: flex;
+        width: 100%;
+        height: 100vh;
+        background-color: $color-tree;
+        position: absolute;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility $timer, opacity $timer;
+        #large-img {
+            width: 8.5vw;
+            height: 4.8vw;
+            margin: auto;
+            background-position: center;
+            background-size: cover;
+            transition: width $timer, height $timer;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .quem {
+        .container-gallery {
+            .image-gallery {
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas: $grid-block-mobile;
+                .photo {
+                    height: 30vh;
+                }
+            }
+        }
+    }
+}

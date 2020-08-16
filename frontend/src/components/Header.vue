@@ -15,7 +15,7 @@
               <router-link to="/" class="a">{{pag1}}</router-link>
             </li>
             <li>
-              <router-link to="/" class="a">{{pag2}}</router-link>
+              <router-link to="/quemsomos" class="a">{{pag2}}</router-link>
             </li>
             <li>
               <router-link to="/" class="a">{{pag3}}</router-link>

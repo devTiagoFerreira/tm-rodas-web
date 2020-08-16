@@ -1,0 +1,50 @@
+$img-amount: 180; //add only multiples of 30 *** exemple: 0, 30, 60, 90...
+
+$img-grid-height: ();
+
+$grid-block: ();
+
+$grid-block-mobile: ();
+
+$x: 1; //control grid-create-mobile
+
+@function grid-create($multiple-of-30) {
+    $grid: "img-"+ ($multiple-of-30 + 1) +"  img-"+ ($multiple-of-30 + 2) +"   img-"+ ($multiple-of-30 + 2) +"   img-"+ (
+            $multiple-of-30 + 3
+        ) +"" "img-"+ ($multiple-of-30 + 1) +"  img-"+ ($multiple-of-30 + 4) +"   img-"+ ($multiple-of-30 + 4) +"   img-"+
+        ($multiple-of-30 + 3) +"" "img-"+ ($multiple-of-30 + 1) +"  img-"+ ($multiple-of-30 + 5) +"   img-"+ (
+            $multiple-of-30 + 6
+        ) +"   img-"+ ($multiple-of-30 + 7) +"" "img-"+ ($multiple-of-30 + 8) +"  img-"+ ($multiple-of-30 + 9) +"   img-"+
+        ($multiple-of-30 + 6) +"   img-"+ ($multiple-of-30 + 10) +"" "img-"+ ($multiple-of-30 + 11) +"  img-"+ (
+            $multiple-of-30 + 11
+        ) +"   img-"+ ($multiple-of-30 + 11) +"   img-"+ ($multiple-of-30 + 12) +"" "img-"+ ($multiple-of-30 + 13) +"  img-"+
+        ($multiple-of-30 + 14) +"   img-"+ ($multiple-of-30 + 14) +"   img-"+ ($multiple-of-30 + 12) +"" "img-"+ (
+            $multiple-of-30 + 15
+        ) +"  img-"+ ($multiple-of-30 + 15) +"   img-"+ ($multiple-of-30 + 15) +"   img-"+ ($multiple-of-30 + 15) +""
+        "img-"+ ($multiple-of-30 + 16) +"  img-"+ ($multiple-of-30 + 17) +"   img-"+ ($multiple-of-30 + 17) +"   img-"+ (
+            $multiple-of-30 + 18
+        ) +"" "img-"+ ($multiple-of-30 + 16) +"  img-"+ ($multiple-of-30 + 19) +"   img-"+ ($multiple-of-30 + 19) +"   img-"+
+        ($multiple-of-30 + 18) +"" "img-"+ ($multiple-of-30 + 20) +"  img-"+ ($multiple-of-30 + 21) +"   img-"+ (
+            $multiple-of-30 + 22
+        ) +"   img-"+ ($multiple-of-30 + 18) +"" "img-"+ ($multiple-of-30 + 23) +"  img-"+ ($multiple-of-30 + 21) +"   img-"+
+        ($multiple-of-30 + 24) +"   img-"+ ($multiple-of-30 + 25) +"" "img-"+ ($multiple-of-30 + 26) +"  img-"+ (
+            $multiple-of-30 + 27
+        ) +"   img-"+ ($multiple-of-30 + 27) +"   img-"+ ($multiple-of-30 + 27) +"" "img-"+ ($multiple-of-30 + 28) +"  img-"+
+        ($multiple-of-30 + 29) +"   img-"+ ($multiple-of-30 + 29) +"   img-"+ ($multiple-of-30 + 30) +"";
+    @return $grid;
+}
+
+@for $i from 0 to $img-amount / 30 {
+    $grid-block: join($grid-block, grid-create($i * 30));
+    $img-grid-height: join($img-grid-height, 3 1 2 1 1 2 1 1 1 1 1 2 1 1 1 2 1 3 1 1 2 1 1 1 1 1 1 1 1 1);
+}
+
+@function grid-create-mobile($img-amount-mobile) {
+    $grid-mobile: "img-" + $img-amount-mobile + " img-" + ($img-amount-mobile + 1) + "";
+    @return $grid-mobile;
+}
+
+@for $i from 0 to $img-amount / 2{
+    $grid-block-mobile: join($grid-block-mobile, grid-create-mobile($x));
+    $x: $x + 2;
+}
