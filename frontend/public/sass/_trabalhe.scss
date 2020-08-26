@@ -8,20 +8,20 @@
     }
     .form {
         width: 100%;
-        height: 2520px;
+        height: 2500px;
     }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 319px) {
     .trabalhe {
         .form {
             width: 100%;
-            height: 2900px;
+            height: 2800px;
         }
     }
-}
+} 
 
-@media screen and (min-width: 320px) and (max-width: 435px) {
+@media screen and (min-width: 320px) and (max-width: 393px) {
     .trabalhe {
         .form {
             width: 100%;
@@ -30,11 +30,29 @@
     }
 }
 
-@media screen and (min-width: 435px) and (max-width: 768px) {
+@media screen and (min-width: 394px) and (max-width: 434px) {
+    .trabalhe {
+        .form {
+            width: 100%;
+            height: 2650px;
+        }
+    }
+}
+
+@media screen and (min-width: 435px) and (max-width: 449px) {
     .trabalhe {
         .form {
             width: 100%;
             height: 2600px;
+        }
+    }
+}
+
+@media screen and (min-width: 450px) and (max-width: 570px) {
+    .trabalhe {
+        .form {
+            width: 100%;
+            height: 2550px;
         }
     }
 }

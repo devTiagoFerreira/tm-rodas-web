@@ -4,6 +4,8 @@
 @import "home";
 @import "quem";
 @import "trabalhe";
+@import "maps";
+@import "footer";
 
 * {
     margin: 0px;
@@ -25,5 +27,13 @@
         color: $color1;
         justify-content: center;
         text-align: center;
+    }
+}
+@media screen and (max-width: 500px) {
+    .container {
+        .banner {
+            font-size: 75px;
+            align-items: center;
+        }
     }
 }

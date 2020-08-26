@@ -5,27 +5,27 @@
         <a
           onclick="M.toast({html: 'Seg - Sex : 08:00 - 17:30 <br/> Sábados : 08:00 - 12:00', classes: 'time'})"
         >
-          <img src="img/clock.png" alt="whatsaap" />
+          <ion-icon name="time"></ion-icon>
         </a>
       </li>
-      <li>
-        <router-link to="/" class="a">
-          <img src="img/local.png" alt="whatsaap" />
+      <li class="local">
+        <router-link to="/maps" class="nav a-soc">
+          <ion-icon name="pin"></ion-icon>
         </router-link>
       </li>
       <li>
         <a href="#">
-          <img src="img/wz.png" alt="whatsaap" />
+          <ion-icon name="logo-whatsapp"></ion-icon>
         </a>
       </li>
       <li>
         <a href="#">
-          <img src="img/fb.png" alt="facebook" />
+          <ion-icon name="logo-facebook"></ion-icon>
         </a>
       </li>
       <li>
         <a href="#">
-          <img src="img/tg.png" alt="instagram" />
+          <ion-icon name="logo-instagram"></ion-icon>
         </a>
       </li>
     </ul>

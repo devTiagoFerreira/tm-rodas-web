@@ -25,18 +25,18 @@
   text-align: center;
   width: calc(170px / 3);
 }
-.social ul li a img,
-.social ul li .a img {
-  height: 30px;
-  transition: 0.1s;
-  margin-top: 5px;
-}
-.social ul li a img:hover,
-.social ul li .a img:hover {
+.social ul li a {
   cursor: pointer;
-  opacity: 50%;
+  transition: 0.2s;
 }
-
+.social ul li a ion-icon {
+  margin-top: 5px;
+  color: #8a0e0e;
+  font-size: 30px;
+}
+.social ul li a:hover {
+  opacity: 0.6;
+}
 @media only screen and (max-width: 992px) {
   .social ul {
     justify-content: center;
@@ -1777,25 +1777,987 @@
 }
 .trabalhe .form {
   width: 100%;
-  height: 2520px;
+  height: 2500px;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 319px) {
   .trabalhe .form {
     width: 100%;
-    height: 2900px;
+    height: 2800px;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 435px) {
+@media screen and (min-width: 320px) and (max-width: 393px) {
   .trabalhe .form {
     width: 100%;
     height: 2700px;
   }
 }
-@media screen and (min-width: 435px) and (max-width: 768px) {
+@media screen and (min-width: 394px) and (max-width: 434px) {
+  .trabalhe .form {
+    width: 100%;
+    height: 2650px;
+  }
+}
+@media screen and (min-width: 435px) and (max-width: 449px) {
   .trabalhe .form {
     width: 100%;
     height: 2600px;
+  }
+}
+@media screen and (min-width: 450px) and (max-width: 570px) {
+  .trabalhe .form {
+    width: 100%;
+    height: 2550px;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.quem .container-gallery {
+  width: 100%;
+  margin: auto;
+}
+.quem .container-gallery .image-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "img-1  img-2   img-2   img-3" "img-1  img-4   img-4   img-3" "img-1  img-5   img-6   img-7" "img-8  img-9   img-6   img-10" "img-11  img-11   img-11   img-12" "img-13  img-14   img-14   img-12" "img-15  img-15   img-15   img-15" "img-16  img-17   img-17   img-18" "img-16  img-19   img-19   img-18" "img-20  img-21   img-22   img-18" "img-23  img-21   img-24   img-25" "img-26  img-27   img-27   img-27" "img-28  img-29   img-29   img-30" "img-31  img-32   img-32   img-33" "img-31  img-34   img-34   img-33" "img-31  img-35   img-36   img-37" "img-38  img-39   img-36   img-40" "img-41  img-41   img-41   img-42" "img-43  img-44   img-44   img-42" "img-45  img-45   img-45   img-45" "img-46  img-47   img-47   img-48" "img-46  img-49   img-49   img-48" "img-50  img-51   img-52   img-48" "img-53  img-51   img-54   img-55" "img-56  img-57   img-57   img-57" "img-58  img-59   img-59   img-60" "img-61  img-62   img-62   img-63" "img-61  img-64   img-64   img-63" "img-61  img-65   img-66   img-67" "img-68  img-69   img-66   img-70" "img-71  img-71   img-71   img-72" "img-73  img-74   img-74   img-72" "img-75  img-75   img-75   img-75" "img-76  img-77   img-77   img-78" "img-76  img-79   img-79   img-78" "img-80  img-81   img-82   img-78" "img-83  img-81   img-84   img-85" "img-86  img-87   img-87   img-87" "img-88  img-89   img-89   img-90" "img-91  img-92   img-92   img-93" "img-91  img-94   img-94   img-93" "img-91  img-95   img-96   img-97" "img-98  img-99   img-96   img-100" "img-101  img-101   img-101   img-102" "img-103  img-104   img-104   img-102" "img-105  img-105   img-105   img-105" "img-106  img-107   img-107   img-108" "img-106  img-109   img-109   img-108" "img-110  img-111   img-112   img-108" "img-113  img-111   img-114   img-115" "img-116  img-117   img-117   img-117" "img-118  img-119   img-119   img-120" "img-121  img-122   img-122   img-123" "img-121  img-124   img-124   img-123" "img-121  img-125   img-126   img-127" "img-128  img-129   img-126   img-130" "img-131  img-131   img-131   img-132" "img-133  img-134   img-134   img-132" "img-135  img-135   img-135   img-135" "img-136  img-137   img-137   img-138" "img-136  img-139   img-139   img-138" "img-140  img-141   img-142   img-138" "img-143  img-141   img-144   img-145" "img-146  img-147   img-147   img-147" "img-148  img-149   img-149   img-150" "img-151  img-152   img-152   img-153" "img-151  img-154   img-154   img-153" "img-151  img-155   img-156   img-157" "img-158  img-159   img-156   img-160" "img-161  img-161   img-161   img-162" "img-163  img-164   img-164   img-162" "img-165  img-165   img-165   img-165" "img-166  img-167   img-167   img-168" "img-166  img-169   img-169   img-168" "img-170  img-171   img-172   img-168" "img-173  img-171   img-174   img-175" "img-176  img-177   img-177   img-177" "img-178  img-179   img-179   img-180";
+}
+.quem .container-gallery .image-gallery .photo {
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 1vh #fff;
+}
+.quem .container-gallery .image-gallery .photo ion-icon {
+  color: #fff;
+  position: relative;
+  z-index: 100;
+  border: solid 1px #fff;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.4s;
+  background-color: #1f1f1f;
+}
+.quem .container-gallery .image-gallery .photo:hover {
+  cursor: pointer;
+}
+.quem .container-gallery .image-gallery .photo:hover ion-icon {
+  font-size: 22px;
+  opacity: 0.6;
+  padding: 10px 10px;
+}
+.quem .container-gallery .image-gallery .img-1 {
+  grid-area: img-1;
+  height: 90vh;
+}
+.quem .container-gallery .image-gallery .img-2 {
+  grid-area: img-2;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-3 {
+  grid-area: img-3;
+  height: 60vh;
+}
+.quem .container-gallery .image-gallery .img-4 {
+  grid-area: img-4;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-5 {
+  grid-area: img-5;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-6 {
+  grid-area: img-6;
+  height: 60vh;
+}
+.quem .container-gallery .image-gallery .img-7 {
+  grid-area: img-7;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-8 {
+  grid-area: img-8;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-9 {
+  grid-area: img-9;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-10 {
+  grid-area: img-10;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-11 {
+  grid-area: img-11;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-12 {
+  grid-area: img-12;
+  height: 60vh;
+}
+.quem .container-gallery .image-gallery .img-13 {
+  grid-area: img-13;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-14 {
+  grid-area: img-14;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-15 {
+  grid-area: img-15;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-16 {
+  grid-area: img-16;
+  height: 60vh;
+}
+.quem .container-gallery .image-gallery .img-17 {
+  grid-area: img-17;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-18 {
+  grid-area: img-18;
+  height: 90vh;
+}
+.quem .container-gallery .image-gallery .img-19 {
+  grid-area: img-19;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-20 {
+  grid-area: img-20;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-21 {
+  grid-area: img-21;
+  height: 60vh;
+}
+.quem .container-gallery .image-gallery .img-22 {
+  grid-area: img-22;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-23 {
+  grid-area: img-23;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-24 {
+  grid-area: img-24;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-25 {
+  grid-area: img-25;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-26 {
+  grid-area: img-26;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-27 {
+  grid-area: img-27;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-28 {
+  grid-area: img-28;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-29 {
+  grid-area: img-29;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-30 {
+  grid-area: img-30;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-31 {
+  grid-area: img-31;
+  height: 90vh;
+}
+.quem .container-gallery .image-gallery .img-32 {
+  grid-area: img-32;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-33 {
+  grid-area: img-33;
+  height: 60vh;
+}
+.quem .container-gallery .image-gallery .img-34 {
+  grid-area: img-34;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-35 {
+  grid-area: img-35;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-36 {
+  grid-area: img-36;
+  height: 60vh;
+}
+.quem .container-gallery .image-gallery .img-37 {
+  grid-area: img-37;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-38 {
+  grid-area: img-38;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-39 {
+  grid-area: img-39;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-40 {
+  grid-area: img-40;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-41 {
+  grid-area: img-41;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-42 {
+  grid-area: img-42;
+  height: 60vh;
+}
+.quem .container-gallery .image-gallery .img-43 {
+  grid-area: img-43;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-44 {
+  grid-area: img-44;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-45 {
+  grid-area: img-45;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-46 {
+  grid-area: img-46;
+  height: 60vh;
+}
+.quem .container-gallery .image-gallery .img-47 {
+  grid-area: img-47;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-48 {
+  grid-area: img-48;
+  height: 90vh;
+}
+.quem .container-gallery .image-gallery .img-49 {
+  grid-area: img-49;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-50 {
+  grid-area: img-50;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-51 {
+  grid-area: img-51;
+  height: 60vh;
+}
+.quem .container-gallery .image-gallery .img-52 {
+  grid-area: img-52;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-53 {
+  grid-area: img-53;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-54 {
+  grid-area: img-54;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-55 {
+  grid-area: img-55;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-56 {
+  grid-area: img-56;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-57 {
+  grid-area: img-57;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-58 {
+  grid-area: img-58;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-59 {
+  grid-area: img-59;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-60 {
+  grid-area: img-60;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-61 {
+  grid-area: img-61;
+  height: 90vh;
+}
+.quem .container-gallery .image-gallery .img-62 {
+  grid-area: img-62;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-63 {
+  grid-area: img-63;
+  height: 60vh;
+}
+.quem .container-gallery .image-gallery .img-64 {
+  grid-area: img-64;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-65 {
+  grid-area: img-65;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-66 {
+  grid-area: img-66;
+  height: 60vh;
+}
+.quem .container-gallery .image-gallery .img-67 {
+  grid-area: img-67;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-68 {
+  grid-area: img-68;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-69 {
+  grid-area: img-69;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-70 {
+  grid-area: img-70;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-71 {
+  grid-area: img-71;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-72 {
+  grid-area: img-72;
+  height: 60vh;
+}
+.quem .container-gallery .image-gallery .img-73 {
+  grid-area: img-73;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-74 {
+  grid-area: img-74;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-75 {
+  grid-area: img-75;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-76 {
+  grid-area: img-76;
+  height: 60vh;
+}
+.quem .container-gallery .image-gallery .img-77 {
+  grid-area: img-77;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-78 {
+  grid-area: img-78;
+  height: 90vh;
+}
+.quem .container-gallery .image-gallery .img-79 {
+  grid-area: img-79;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-80 {
+  grid-area: img-80;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-81 {
+  grid-area: img-81;
+  height: 60vh;
+}
+.quem .container-gallery .image-gallery .img-82 {
+  grid-area: img-82;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-83 {
+  grid-area: img-83;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-84 {
+  grid-area: img-84;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-85 {
+  grid-area: img-85;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-86 {
+  grid-area: img-86;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-87 {
+  grid-area: img-87;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-88 {
+  grid-area: img-88;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-89 {
+  grid-area: img-89;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-90 {
+  grid-area: img-90;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-91 {
+  grid-area: img-91;
+  height: 90vh;
+}
+.quem .container-gallery .image-gallery .img-92 {
+  grid-area: img-92;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-93 {
+  grid-area: img-93;
+  height: 60vh;
+}
+.quem .container-gallery .image-gallery .img-94 {
+  grid-area: img-94;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-95 {
+  grid-area: img-95;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-96 {
+  grid-area: img-96;
+  height: 60vh;
+}
+.quem .container-gallery .image-gallery .img-97 {
+  grid-area: img-97;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-98 {
+  grid-area: img-98;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-99 {
+  grid-area: img-99;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-100 {
+  grid-area: img-100;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-101 {
+  grid-area: img-101;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-102 {
+  grid-area: img-102;
+  height: 60vh;
+}
+.quem .container-gallery .image-gallery .img-103 {
+  grid-area: img-103;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-104 {
+  grid-area: img-104;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-105 {
+  grid-area: img-105;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-106 {
+  grid-area: img-106;
+  height: 60vh;
+}
+.quem .container-gallery .image-gallery .img-107 {
+  grid-area: img-107;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-108 {
+  grid-area: img-108;
+  height: 90vh;
+}
+.quem .container-gallery .image-gallery .img-109 {
+  grid-area: img-109;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-110 {
+  grid-area: img-110;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-111 {
+  grid-area: img-111;
+  height: 60vh;
+}
+.quem .container-gallery .image-gallery .img-112 {
+  grid-area: img-112;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-113 {
+  grid-area: img-113;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-114 {
+  grid-area: img-114;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-115 {
+  grid-area: img-115;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-116 {
+  grid-area: img-116;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-117 {
+  grid-area: img-117;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-118 {
+  grid-area: img-118;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-119 {
+  grid-area: img-119;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-120 {
+  grid-area: img-120;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-121 {
+  grid-area: img-121;
+  height: 90vh;
+}
+.quem .container-gallery .image-gallery .img-122 {
+  grid-area: img-122;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-123 {
+  grid-area: img-123;
+  height: 60vh;
+}
+.quem .container-gallery .image-gallery .img-124 {
+  grid-area: img-124;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-125 {
+  grid-area: img-125;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-126 {
+  grid-area: img-126;
+  height: 60vh;
+}
+.quem .container-gallery .image-gallery .img-127 {
+  grid-area: img-127;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-128 {
+  grid-area: img-128;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-129 {
+  grid-area: img-129;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-130 {
+  grid-area: img-130;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-131 {
+  grid-area: img-131;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-132 {
+  grid-area: img-132;
+  height: 60vh;
+}
+.quem .container-gallery .image-gallery .img-133 {
+  grid-area: img-133;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-134 {
+  grid-area: img-134;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-135 {
+  grid-area: img-135;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-136 {
+  grid-area: img-136;
+  height: 60vh;
+}
+.quem .container-gallery .image-gallery .img-137 {
+  grid-area: img-137;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-138 {
+  grid-area: img-138;
+  height: 90vh;
+}
+.quem .container-gallery .image-gallery .img-139 {
+  grid-area: img-139;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-140 {
+  grid-area: img-140;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-141 {
+  grid-area: img-141;
+  height: 60vh;
+}
+.quem .container-gallery .image-gallery .img-142 {
+  grid-area: img-142;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-143 {
+  grid-area: img-143;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-144 {
+  grid-area: img-144;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-145 {
+  grid-area: img-145;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-146 {
+  grid-area: img-146;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-147 {
+  grid-area: img-147;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-148 {
+  grid-area: img-148;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-149 {
+  grid-area: img-149;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-150 {
+  grid-area: img-150;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-151 {
+  grid-area: img-151;
+  height: 90vh;
+}
+.quem .container-gallery .image-gallery .img-152 {
+  grid-area: img-152;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-153 {
+  grid-area: img-153;
+  height: 60vh;
+}
+.quem .container-gallery .image-gallery .img-154 {
+  grid-area: img-154;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-155 {
+  grid-area: img-155;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-156 {
+  grid-area: img-156;
+  height: 60vh;
+}
+.quem .container-gallery .image-gallery .img-157 {
+  grid-area: img-157;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-158 {
+  grid-area: img-158;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-159 {
+  grid-area: img-159;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-160 {
+  grid-area: img-160;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-161 {
+  grid-area: img-161;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-162 {
+  grid-area: img-162;
+  height: 60vh;
+}
+.quem .container-gallery .image-gallery .img-163 {
+  grid-area: img-163;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-164 {
+  grid-area: img-164;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-165 {
+  grid-area: img-165;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-166 {
+  grid-area: img-166;
+  height: 60vh;
+}
+.quem .container-gallery .image-gallery .img-167 {
+  grid-area: img-167;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-168 {
+  grid-area: img-168;
+  height: 90vh;
+}
+.quem .container-gallery .image-gallery .img-169 {
+  grid-area: img-169;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-170 {
+  grid-area: img-170;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-171 {
+  grid-area: img-171;
+  height: 60vh;
+}
+.quem .container-gallery .image-gallery .img-172 {
+  grid-area: img-172;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-173 {
+  grid-area: img-173;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-174 {
+  grid-area: img-174;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-175 {
+  grid-area: img-175;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-176 {
+  grid-area: img-176;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-177 {
+  grid-area: img-177;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-178 {
+  grid-area: img-178;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-179 {
+  grid-area: img-179;
+  height: 30vh;
+}
+.quem .container-gallery .image-gallery .img-180 {
+  grid-area: img-180;
+  height: 30vh;
+}
+.quem #body-large-img {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.4s, opacity 0.4s;
+}
+.quem #body-large-img #large-img {
+  width: 8.5vw;
+  height: 4.8vw;
+  margin: auto;
+  background-position: center;
+  background-size: cover;
+  transition: width 0.4s, height 0.4s;
+}
+.quem #body-large-img #large-img:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .quem .container-gallery .image-gallery {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "img-1 img-2" "img-3 img-4" "img-5 img-6" "img-7 img-8" "img-9 img-10" "img-11 img-12" "img-13 img-14" "img-15 img-16" "img-17 img-18" "img-19 img-20" "img-21 img-22" "img-23 img-24" "img-25 img-26" "img-27 img-28" "img-29 img-30" "img-31 img-32" "img-33 img-34" "img-35 img-36" "img-37 img-38" "img-39 img-40" "img-41 img-42" "img-43 img-44" "img-45 img-46" "img-47 img-48" "img-49 img-50" "img-51 img-52" "img-53 img-54" "img-55 img-56" "img-57 img-58" "img-59 img-60" "img-61 img-62" "img-63 img-64" "img-65 img-66" "img-67 img-68" "img-69 img-70" "img-71 img-72" "img-73 img-74" "img-75 img-76" "img-77 img-78" "img-79 img-80" "img-81 img-82" "img-83 img-84" "img-85 img-86" "img-87 img-88" "img-89 img-90" "img-91 img-92" "img-93 img-94" "img-95 img-96" "img-97 img-98" "img-99 img-100" "img-101 img-102" "img-103 img-104" "img-105 img-106" "img-107 img-108" "img-109 img-110" "img-111 img-112" "img-113 img-114" "img-115 img-116" "img-117 img-118" "img-119 img-120" "img-121 img-122" "img-123 img-124" "img-125 img-126" "img-127 img-128" "img-129 img-130" "img-131 img-132" "img-133 img-134" "img-135 img-136" "img-137 img-138" "img-139 img-140" "img-141 img-142" "img-143 img-144" "img-145 img-146" "img-147 img-148" "img-149 img-150" "img-151 img-152" "img-153 img-154" "img-155 img-156" "img-157 img-158" "img-159 img-160" "img-161 img-162" "img-163 img-164" "img-165 img-166" "img-167 img-168" "img-169 img-170" "img-171 img-172" "img-173 img-174" "img-175 img-176" "img-177 img-178" "img-179 img-180";
+  }
+  .quem .container-gallery .image-gallery .photo {
+    height: 30vh;
+  }
+}
+.maps {
+  margin-bottom: 40px;
+}
+.maps h1 {
+  padding: 0 10px;
+  text-align: center;
+}
+.maps .form {
+  width: 100%;
+  height: 450px;
+}
+
+#footer {
+  margin: auto;
+  max-width: 100%;
+  background-image: url("../img/tractor.jpg");
+  background-size: cover;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  color: #b90d0d;
+}
+#footer .bot {
+  max-width: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+#footer .bot .container {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 400px;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+#footer .bot .container .contact-footer {
+  text-align: center;
+  width: 180px;
+  height: 300px;
+  padding-top: 30px;
+}
+#footer .bot .container .contact-footer .end img {
+  width: 150px;
+  background-color: #fff;
+}
+#footer .bot .container .contact-footer .end p {
+  font-size: 20px;
+  font-weight: 500;
+  color: #b90d0d;
+  transition: 0.2s;
+}
+#footer .bot .container .contact-footer .end p:hover {
+  color: #9a9aa2;
+}
+#footer .bot .container .contact-footer a {
+  color: #b90d0d;
+  font-size: 20px;
+  font-weight: 400;
+  transition: 0.2s;
+}
+#footer .bot .container .contact-footer a:hover {
+  color: #9a9aa2;
+}
+#footer .bot .container .contact-footer .copy {
+  margin-top: 15px;
+  color: #9a9aa2;
+  text-align: center;
+  font-size: 14px;
+}
+#footer .bot .container .links-footer {
+  width: 180px;
+  height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 30px;
+}
+#footer .bot .container .links-footer .nav {
+  width: 100%;
+  font-size: 20px;
+  font-weight: 500;
+  color: #b90d0d;
+  height: 30px;
+  line-height: 30px;
+  transition: 0.2s;
+}
+#footer .bot .container .links-footer .nav:hover {
+  color: #9a9aa2;
+}
+#footer .bot .container .links-footer .nav i {
+  height: 30px;
+  line-height: 30px;
+}
+#footer .bot .container .social-footer {
+  width: 120px;
+  height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+#footer .bot .container .social-footer .nav {
+  width: 100%;
+  font-size: 20px;
+  font-weight: 500;
+  color: #b90d0d;
+  height: 30px;
+  line-height: 30px;
+  transition: 0.2s;
+}
+#footer .bot .container .social-footer .nav:hover {
+  color: #9a9aa2;
+}
+#footer .bot .container .social-footer .nav ion-icon {
+  font-size: 30px;
+  height: 30px;
+  line-height: 30px;
+  float: left;
+  margin-right: 10px;
+}
+#footer .bot .dev {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #8a0e0e;
+  height: 50px;
+}
+#footer .bot .dev a {
+  color: #000;
+  transition: 0.2s;
+  font-size: 18px;
+  font-weight: 400;
+}
+#footer .bot .dev a:hover {
+  color: #fff;
+}
+
+@media screen and (max-width: 416px) {
+  #footer .bot .container .links-footer {
+    visibility: hidden;
+    position: absolute;
+  }
+}
+@media screen and (max-width: 550px) {
+  #footer .bot .container .contact-footer {
+    margin: auto;
+  }
+  #footer .bot .container .links-footer {
+    margin: auto;
+  }
+  #footer .bot .container .social-footer {
+    visibility: hidden;
+    position: absolute;
   }
 }
 * {
@@ -1819,6 +2781,13 @@
   color: #fff;
   justify-content: center;
   text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+  .container .banner {
+    font-size: 75px;
+    align-items: center;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,152 @@
+#footer {
+    margin: auto;
+    max-width: 100%;
+    background-image: url("../img/tractor.jpg");
+    background-size: cover;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    color: $color5;
+    .bot {
+        max-width: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            min-height: 400px;
+            justify-content: space-between;
+            padding-top: 30px;
+            .contact-footer {
+                text-align: center;
+                width: 180px;
+                height: 300px;
+                padding-top: 30px;
+                .end {
+                    img {
+                        width: 150px;
+                        background-color: $color1;
+                    }
+                    p {
+                        font-size: 20px;
+                        font-weight: 500;
+                        color: $color5;
+                        transition: 0.2s;
+                        &:hover {
+                            color: $color4;
+                        }
+                    }
+                }
+                a {
+                    color: $color5;
+                    font-size: 20px;
+                    font-weight: 400;
+                    transition: 0.2s;
+                    &:hover {
+                        color: $color4;
+                    }
+                }
+                .copy {
+                    margin-top: 15px;
+                    color: $color4;
+                    text-align: center;
+                    font-size: 14px;
+                }
+            }
+            .links-footer {
+                width: 180px;
+                height: 300px;
+                display: flex;
+                flex-wrap: wrap;
+                padding-top: 30px;
+                .nav {
+                    width: 100%;
+                    font-size: 20px;
+                    font-weight: 500;
+                    color: $color5;
+                    height: 30px;
+                    line-height: 30px;
+                    transition: 0.2s;
+                    &:hover {
+                        color: $color4;
+                    }
+                    i {
+                        height: 30px;
+                        line-height: 30px;
+                    }
+                }
+            }
+            .social-footer {
+                width: 120px;
+                height: 300px;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                .nav {
+                    width: 100%;
+                    font-size: 20px;
+                    font-weight: 500;
+                    color: $color5;
+                    height: 30px;
+                    line-height: 30px;
+                    transition: 0.2s;
+                    &:hover {
+                        color: $color4;
+                    }
+                    ion-icon {
+                        font-size: 30px;
+                        height: 30px;
+                        line-height: 30px;
+                        float: left;
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+        .dev {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $color3;
+            height: 50px;
+            a {
+                color: $color2;
+                transition: 0.2s;
+                font-size: 18px;
+                font-weight: 400;
+                &:hover {
+                    color: $color1;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 416px) {
+    #footer {
+        .bot {
+            .container {
+                .links-footer {
+                    visibility: hidden;
+                    position: absolute;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 550px) {
+    #footer {
+        .bot {
+            .container {
+                .contact-footer {
+                    margin: auto;
+                }
+                .links-footer {
+                    margin: auto;
+                }
+                .social-footer {
+                    visibility: hidden;
+                    position: absolute;
+                }
+            }
+        }
+    }
+}

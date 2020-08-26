@@ -16,23 +16,21 @@
       </div>
     </div>
     <router-view/>
-    <div class="parallax-container">
-      <div class="parallax">
-        <img src="img/tractor.jpg" />
-      </div>
-    </div>
+    <Footer/>
   </div>
 </template>
 
 <script>
 import Header from "./components/Header.vue";
 import Social from "./components/Social.vue";
+import Footer from "./components/Footer.vue";
 
 export default {
   name: "App",
   components: {
     Header,
-    Social
+    Social,
+    Footer
   },
 };
 </script>

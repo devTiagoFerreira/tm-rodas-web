@@ -1,5 +1,6 @@
 <template>
   <section class="container home">
+    <div class="banner"></div>
     <h1>TM RODAS</h1>
     <p class="desc">
       Vivemos para vovê rodar e você roda para viver. <br/>
@@ -58,4 +59,3 @@
     </div>
   </section>
 </template>
-

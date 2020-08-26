@@ -11,16 +11,16 @@
             <i class="material-icons">menu</i>
           </a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li>
+            <li class="hm page">
               <router-link to="/" class="a">{{pag1}}</router-link>
             </li>
-            <li>
+            <li class="qs page">
               <router-link to="/quemsomos" class="a">{{pag2}}</router-link>
             </li>
             <li>
-              <router-link to="/" class="a">{{pag3}}</router-link>
+              <router-link to="" class="a" onclick="M.toast({html: 'Em breve, aguarde!', classes: 'time'})">{{pag3}}</router-link>
             </li>
-            <li>
+            <li class="wk page">
               <a class="dropdown-trigger" data-target="dropdown-web">
                 {{pag4}}
                 <i class="material-icons right">arrow_drop_down</i>
@@ -42,13 +42,13 @@
         </router-link>
       </li>
       <li>
-        <router-link to="/" class="a">
+        <router-link to="/quemsomos" class="a">
           <i class="material-icons left">group</i>
           {{pag2}}
         </router-link>
       </li>
       <li>
-        <router-link to="/" class="a">
+        <router-link to="" class="a" onclick="M.toast({html: 'Em breve, aguarde!', classes: 'time'})">
           <i class="material-icons left">shopping_cart</i>
           {{pag3}}
         </router-link>
@@ -69,8 +69,8 @@
       <li>
         <router-link to="/" class="a">{{drop2}}</router-link>
       </li>
-      <li>
-        <router-link to="/" class="a">{{drop3}}</router-link>
+      <li class="wk-drop">
+        <router-link to="/trabalheconosco" class="a">{{drop3}}</router-link>
       </li>
     </ul>
     <!--mob dropdown nav-->
@@ -82,7 +82,7 @@
         <router-link to="/" class="a">{{drop2}}</router-link>
       </li>
       <li>
-        <router-link to="/" class="a">{{drop3}}</router-link>
+        <router-link to="/trabalheconosco" class="a">{{drop3}}</router-link>
       </li>
     </ul>
   </header>
